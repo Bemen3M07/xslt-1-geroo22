@@ -8,11 +8,13 @@
     <tr bgcolor="#ff3333">
       <th style="text-align:left">Title</th>
       <th style="text-align:left">Artist</th>
+      <th style="text-align:left">country</th>
     </tr>
     <xsl:for-each select="catalog/cd">
     <tr>
       <td><xsl:value-of select="title"/></td>
       <td><xsl:value-of select="artist"/></td>
+      <td><xsl:value-of select="country"/></td>
     </tr>
     </xsl:for-each>
   </table>
